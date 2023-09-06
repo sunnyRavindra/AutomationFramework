@@ -11,7 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-public class Base {
+import com.amazon.utilities.WebUtil;
+
+
+public class Base extends WebUtil{
 
 	public static WebDriver driver;
 
@@ -44,7 +47,7 @@ public class Base {
 	@AfterSuite
 	public void tearDown() {
 
-		logs.info(" Tearing it all down !!!");
+		logs.info("Tearing it all down !!!");
 
 		if (driver != null) {
 			driver.quit();
@@ -57,7 +60,6 @@ public class Base {
 		try {
 			property.load(new FileInputStream(System.getProperty("user.dir") + filepath));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

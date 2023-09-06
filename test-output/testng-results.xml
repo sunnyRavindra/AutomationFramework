@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-06T15:00:22 IST" name="Data Driven Testing" finished-at="2023-09-06T15:00:22 IST" duration-ms="29">
+  <suite started-at="2023-09-06T22:37:07 IST" name="Data Driven Testing" finished-at="2023-09-06T22:38:04 IST" duration-ms="56783">
     <groups>
     </groups>
-    <test started-at="2023-09-06T15:00:22 IST" name="test testting" finished-at="2023-09-06T15:00:22 IST" duration-ms="29">
-      <class name="com.amazon.testcase.TestTestcase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:17 IST" name="setUp" finished-at="2023-09-06T15:00:22 IST" duration-ms="5387" status="PASS">
+    <test started-at="2023-09-06T22:37:07 IST" name="test testting" finished-at="2023-09-06T22:38:04 IST" duration-ms="56783">
+      <class name="com.amazon.data.providers.HashMapDataProvider">
+        <test-method signature="validateSearch(java.util.HashMap)[pri:0, instance:com.amazon.data.providers.HashMapDataProvider@d78795]" started-at="2023-09-06T22:37:39 IST" name="validateSearch" data-provider="searchData" finished-at="2023-09-06T22:37:54 IST" duration-ms="15619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{keyword1=Samsung mobile, keyword2=Apple mobile}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearch -->
+        <test-method signature="validateSearch(java.util.HashMap)[pri:0, instance:com.amazon.data.providers.HashMapDataProvider@d78795]" started-at="2023-09-06T22:37:54 IST" name="validateSearch" data-provider="searchData" finished-at="2023-09-06T22:38:04 IST" duration-ms="9429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{keyword1=Samsung mobile, keyword2=Apple mobile}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearch -->
+      </class> <!-- com.amazon.data.providers.HashMapDataProvider -->
+      <class name="com.amazon.testcase.AmazonLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.testcase.AmazonLogin@12cd9150]" started-at="2023-09-06T22:37:00 IST" name="setUp" finished-at="2023-09-06T22:37:07 IST" duration-ms="6862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logininamazon()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:22 IST" name="logininamazon" finished-at="2023-09-06T15:00:22 IST" duration-ms="3" status="PASS">
+        <test-method signature="logininAmazon()[pri:0, instance:com.amazon.testcase.AmazonLogin@12cd9150]" started-at="2023-09-06T22:37:07 IST" name="logininAmazon" finished-at="2023-09-06T22:37:09 IST" duration-ms="2474" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logininamazon -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:22 IST" name="tearDown" finished-at="2023-09-06T15:00:22 IST" duration-ms="121" status="PASS">
+        </test-method> <!-- logininAmazon -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcase.AmazonLogin@12cd9150]" started-at="2023-09-06T22:38:04 IST" name="tearDown" finished-at="2023-09-06T22:38:04 IST" duration-ms="169" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.testcase.TestTestcase -->
+      </class> <!-- com.amazon.testcase.AmazonLogin -->
+      <class name="com.amazon.data.providers.ObjectDataProvider">
+        <test-method signature="validateSearch(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.data.providers.ObjectDataProvider@46074492]" started-at="2023-09-06T22:37:09 IST" name="validateSearch" data-provider="searchData" finished-at="2023-09-06T22:37:25 IST" duration-ms="15189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[manual]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearch -->
+        <test-method signature="validateSearch(java.lang.String,java.lang.String)[pri:0, instance:com.amazon.data.providers.ObjectDataProvider@46074492]" started-at="2023-09-06T22:37:25 IST" name="validateSearch" data-provider="searchData" finished-at="2023-09-06T22:37:39 IST" duration-ms="14046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testing]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearch -->
+      </class> <!-- com.amazon.data.providers.ObjectDataProvider -->
     </test> <!-- test testting -->
   </suite> <!-- Data Driven Testing -->
 </testng-results>

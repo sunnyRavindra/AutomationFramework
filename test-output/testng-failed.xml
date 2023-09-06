@@ -3,13 +3,13 @@
 <suite name="Failed suite [Data Driven Testing]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="test testting(failed)">
     <classes>
-      <class name="com.amazon.testcase.TestTestcase">
+      <class name="com.amazon.testcase.SearchProducts">
         <methods>
-          <include name="logininamazon"/>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="validateSearch" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- com.amazon.testcase.TestTestcase -->
+      </class> <!-- com.amazon.testcase.SearchProducts -->
     </classes>
   </test> <!-- test testting(failed) -->
 </suite> <!-- Failed suite [Data Driven Testing] -->
