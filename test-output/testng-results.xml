@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-06T14:20:05 IST" name="Data Driven Testing" finished-at="2023-09-06T14:20:05 IST" duration-ms="24">
+  <suite started-at="2023-09-06T15:00:22 IST" name="Data Driven Testing" finished-at="2023-09-06T15:00:22 IST" duration-ms="29">
     <groups>
     </groups>
-    <test started-at="2023-09-06T14:20:05 IST" name="test testting" finished-at="2023-09-06T14:20:05 IST" duration-ms="24">
+    <test started-at="2023-09-06T15:00:22 IST" name="test testting" finished-at="2023-09-06T15:00:22 IST" duration-ms="29">
       <class name="com.amazon.testcase.TestTestcase">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.testcase.TestTestcase@49c90a9c]" started-at="2023-09-06T14:19:59 IST" name="setUp" finished-at="2023-09-06T14:20:05 IST" duration-ms="5411" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:17 IST" name="setUp" finished-at="2023-09-06T15:00:22 IST" duration-ms="5387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logininamazon()[pri:0, instance:com.amazon.testcase.TestTestcase@49c90a9c]" started-at="2023-09-06T14:20:05 IST" name="logininamazon" finished-at="2023-09-06T14:20:05 IST" duration-ms="3" status="PASS">
+        <test-method signature="logininamazon()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:22 IST" name="logininamazon" finished-at="2023-09-06T15:00:22 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logininamazon -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcase.TestTestcase@49c90a9c]" started-at="2023-09-06T14:20:05 IST" name="tearDown" finished-at="2023-09-06T14:20:05 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amazon.testcase.TestTestcase@a7e2d9d]" started-at="2023-09-06T15:00:22 IST" name="tearDown" finished-at="2023-09-06T15:00:22 IST" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

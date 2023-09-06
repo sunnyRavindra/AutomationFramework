@@ -1,14 +1,11 @@
 package com.amazon.base;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -19,27 +16,36 @@ public class Base {
 	public static WebDriver driver;
 
 	// Initializing base Config Properties
-	public static Properties BaseConfig = new Properties();
-	public static Properties ORConfig = new Properties();
+	public static Properties Config = new Properties();
+	public static Properties AmazonOR = new Properties();
+	public static Logger logs = Logger.getLogger("devpinoyLogger");
+	public String configFile = "//src//test//resources//properties//config.properties";
+	public String amazonOrFile = "//src//test//resources//properties//Amazon.OR.properties";
+	public String Browser;
 
 	@BeforeSuite
 	public void setUp() {
 
+		logs.info("Entering Before suite !!!");
 
 		if (driver == null) {
 
-			initProperty("//src//test//resources//properties//config.properties", BaseConfig);
+			initProperty(configFile, Config);
 
-			initProperty("//src//test//resources//properties//config.properties", ORConfig);
-			
+			initProperty(amazonOrFile, AmazonOR);
+
 			intiBrowser();
-			
+
+			logs.info("Before Suite formalities completed successfully");
 		}
 
 	}
 
 	@AfterSuite
 	public void tearDown() {
+
+		logs.info(" Tearing it all down !!!");
+
 		if (driver != null) {
 			driver.quit();
 		}
@@ -59,13 +65,14 @@ public class Base {
 
 	// Initialize browser
 	public static void intiBrowser() {
-		if (BaseConfig.getProperty("Browser").equals("Chrome")) {
+		if (Config.getProperty("Browser").equals("Chrome")) {
 			// System.setProperty("webDriver.chrome.driver", System.getProperty("user.dir")
 			// + "//src//test//resources//excecutatbles//chromedriver.exe");
 			driver = new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
-			driver.get(BaseConfig.getProperty("BaseURL"));
+			driver.get(Config.getProperty("BaseURL"));
 		}
 	}
+
 }
