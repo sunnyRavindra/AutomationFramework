@@ -6,6 +6,8 @@ import org.testng.annotations.Test;
 
 import com.amazon.base.Base;
 
+import sun.security.util.Password;
+
 public class AmazonLogin extends Base{
 
 	@Test
@@ -23,7 +25,7 @@ public class AmazonLogin extends Base{
 		
 		Assert.assertTrue(driver.findElement(By.cssSelector(AmazonOR.getProperty("password"))).isDisplayed());
 
-		driver.findElement(By.cssSelector(AmazonOR.getProperty("password"))).sendKeys("RUsu@@1427");;
+		driver.findElement(By.cssSelector(AmazonOR.getProperty("password"))).sendKeys();
 		
 		Assert.assertTrue(driver.findElement(By.cssSelector(AmazonOR.getProperty("passwordButton"))).isDisplayed());
 
