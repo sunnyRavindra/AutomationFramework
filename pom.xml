@@ -3,9 +3,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.botcat.org</groupId>
-	<artifactId>DataDrivenFramework</artifactId>
+	<artifactId>SeleniumFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
 	<dependencies>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -87,7 +86,5 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.13.0</version>
 		</dependency>
-
-
 	</dependencies>
 </project>
