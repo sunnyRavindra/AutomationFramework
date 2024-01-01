@@ -3,11 +3,13 @@
 <suite name="Failed suite [Suite1]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="testcases.DataDrivenTC">
+      <class name="demoqa.TestCases">
         <methods>
-          <include name="Excel"/>
+          <include name="afterTest"/>
+          <include name="test"/>
+          <include name="beforeTest"/>
         </methods>
-      </class> <!-- testcases.DataDrivenTC -->
+      </class> <!-- demoqa.TestCases -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite1] -->
