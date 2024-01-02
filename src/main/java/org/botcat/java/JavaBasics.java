@@ -1,13 +1,11 @@
 package org.botcat.java;
 
-import java.lang.reflect.Array;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
-import java.util.Scanner;
 
 public class JavaBasics {
 
@@ -88,7 +86,7 @@ public class JavaBasics {
 		/*------------If Else-------------*/
 		if (falseBoolean = false) {
 			System.out.println("falseBoolean is false");
-		} else if (falseBoolean != false) {
+		} else if (falseBoolean) {
 			System.out.println("falseBoolean is not false but can be anything else");
 		} else {
 			System.out.println("going in else block");
@@ -96,7 +94,7 @@ public class JavaBasics {
 
 		/*------------Ternary Operator-------------*/
 		int newInt = 100;
-		Boolean ternaryOperator = newInt == 100 ? false : true;
+		boolean ternaryOperator = newInt == 100 ? false : true;
 
 		/*------------Arrays-------------*/
 		int[] arrayInt = new int[10];
@@ -195,32 +193,32 @@ public class JavaBasics {
 
 		/*------------Abstract Class-------------*/
 		ParentDog abstractDog = new ParentDog("Name","Weight","height","number");
-		
+
 		abstractDog.getType();
 		abstractDog.setType("This is some type");
 		abstractDog.parentAbstractClassMethod();
-		
+
 		/*------------Runtime Polymorphism-------------*/
 		ChildDog childDog = new ChildDog(number4, number4, number4, number4);
-		
+
 		ParentDog parentDog = new ChildDog(number4, number4, number4, number4);
-		
+
 		//In abstract calss you have have variables and constructor
-		//You can have private methods 
+		//You can have private methods
 		//Abstract class cannot be private
 		//This calls method from childclass
 		parentDog.DogMethod();
-		
+
 		//This calls method from childclass
 		childDog.DogMethod();
-		
+
 		//Interface cannot be private
 		//In Interface no constructor is created
 		//Only Public Static Final Variables can be declared
-		//can have methods with body but has to be default and static 
+		//can have methods with body but has to be default and static
 		//Interfaces can extend other multiple interfaces, you can not use implements keyword in interface
-		childDog.defaultInterfaceMethods();
-		
+//		childDog.defaultInterfaceMethods();
+
 		/*------------End-------------*/
 	}
 }

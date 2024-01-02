@@ -2,9 +2,6 @@ package listeners;
 
 import org.testng.ISuite;
 import org.testng.ISuiteListener;
-import org.testng.ITestContext;
-import org.testng.ITestListener;
-import org.testng.ITestResult;
 
 public class SuiteListener implements ISuiteListener {
 

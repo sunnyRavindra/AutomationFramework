@@ -8,7 +8,7 @@ public class Main {
 		ControlStatements controlStatements = new ControlStatements();
 		controlStatements.basicSwitch(4);
 		controlStatements.basicSwitchVariation(2);
-		controlStatements.enhanceSwitch(3);
+//		controlStatements.enhanceSwitch(3);
 		controlStatements.forLoop();
 		controlStatements.forLoop(false);
 		controlStatements.stringLitarals();

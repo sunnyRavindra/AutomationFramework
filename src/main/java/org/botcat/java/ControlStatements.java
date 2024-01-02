@@ -6,7 +6,7 @@ public class ControlStatements extends DataTypes {
 		// Conditional Statements
 		if (falseBoolean = false) {
 			System.out.println("falseBoolean is false");
-		} else if (falseBoolean != false) {
+		} else if (falseBoolean) {
 			System.out.println("falseBoolean is not false but can be anything else");
 		} else {
 			System.out.println("going in else block");
@@ -14,7 +14,7 @@ public class ControlStatements extends DataTypes {
 	}
 
 	protected void ternary() {
-		Boolean ternaryOperator = newInt == 100 ? false : true;
+		boolean ternaryOperator = newInt == 100 ? false : true;
 	}
 
 	protected void stringLitarals() {
@@ -64,13 +64,13 @@ public class ControlStatements extends DataTypes {
 		}
 	}
 
-	protected void enhanceSwitch(int Switch) {
-		switch (Switch) {
-		case 1 -> System.out.println("This is coming from case 1");
-		case 2 -> System.out.println("This is coming from case 2");
-		case 3, 4, 5 -> System.out.println("This is coming from case 3,4,5");
-		default -> System.out.println("This is coming from Default");
-		}
+//	protected void enhanceSwitch(int Switch) {
+//		switch (Switch) {
+//		case 1 -> System.out.println("This is coming from case 1");
+//		case 2 -> System.out.println("This is coming from case 2");
+//		case 3, 4, 5 -> System.out.println("This is coming from case 3,4,5");
+//		default -> System.out.println("This is coming from Default");
+//		}
 	}
 
-}
+//}

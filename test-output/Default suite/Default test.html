@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Dec 23 13:54:26 IST 2023</td>
+<td>Started on:</td><td>Tue Jan 02 22:15:49 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>8 seconds (8624 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6420 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,18 +76,31 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='demoqa.testcases.TS1.validateDemoQADashboard()'><b>validateDemoQADashboard</b><br>Test class: demoqa.testcases.TS1<br/>
-<a href="#Output-368270275" onClick='toggleBox("Output-368270275", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-368270275" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-368270275">
-Starting Validation ---------------------->>><br/>
-Validation Completed ------------------------>>><br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>demoqa.testcases.TS1@5df417a7</td></tr>
+<td title='runner.SouceDemo.runScenario()'><b>runScenario</b><br>Test class: runner.SouceDemo<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login to the souceDemo website", "Login Feature"</td>
+<td><div><pre>java.lang.AssertionError: expected [Swag Labss] but found [Swag Labs]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.soucedemo.HomePage.validateTitle(HomePage.java:41)
+	at stepdefinition.soucedemo.Login.validate_title_with_title(Login.java:42)
+	at ✽.validate title with title &quot;Swag Labss&quot;(file:///Users/sunnybharne/code/AutomationFramework/src/test/resources/features/soucedemo/login.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1938446408", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1938446408'><pre>java.lang.AssertionError: expected [Swag Labss] but found [Swag Labs]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at pages.soucedemo.HomePage.validateTitle(HomePage.java:41)
+	at stepdefinition.soucedemo.Login.validate_title_with_title(Login.java:42)
+	at ✽.validate title with title &quot;Swag Labss&quot;(file:///Users/sunnybharne/code/AutomationFramework/src/test/resources/features/soucedemo/login.feature:12)
+</pre></div></td>
+<td>6</td>
+<td>runner.SouceDemo@53499d85</td></tr>
 </table><p>
 </body>
 </html>

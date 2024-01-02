@@ -11,9 +11,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class WebUtil {
-	
+
 	public void takeScreenShot(WebDriver driver, String FileName) {
-		
+
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 
         Date currentDate = new Date();
@@ -21,11 +21,11 @@ public class WebUtil {
         String timestamp = dateFormat.format(currentDate);
 
         System.out.println("Timestamp: " + timestamp);
-		
+
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
-		
+
 		File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);
-		
+
 		File destinationFile = new File(System.getProperty("user.dir") + "//src//test//resources//screenShots//" + FileName + timestamp +".png");
 
 		try {

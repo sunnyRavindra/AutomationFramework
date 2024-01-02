@@ -88,7 +88,7 @@ public class IoClass {
 		/**
 		 * DataOutputStream Java DataOutputStream class allows an application to write
 		 * primitive Java data types to the output stream in a machine-independent way.
-		 * 
+		 *
 		 * Java application generally uses the data output stream to write data that can
 		 * later be read by a data input stream.
 		 */
@@ -115,26 +115,26 @@ public class IoClass {
 		/**
 		 * BufferWriter and BufferReader
 		 */
-//	    FileWriter writer = new FileWriter(File);  
-	    BufferedWriter buffer = new BufferedWriter(new FileWriter(File));  
-	    buffer.write("Welcome to javaTpoint.");  
-	    buffer.close(); 
-	    
-//        FileReader fr=new FileReader(File);    
-        BufferedReader br=new BufferedReader(new FileReader(File));    
+//	    FileWriter writer = new FileWriter(File);
+	    BufferedWriter buffer = new BufferedWriter(new FileWriter(File));
+	    buffer.write("Welcome to javaTpoint.");
+	    buffer.close();
 
-        int i;    
-        while((i=br.read())!=-1){  
-        System.out.print((char)i);  
-        }  
-        br.close();    
-        br.close();   
+//        FileReader fr=new FileReader(File);
+        BufferedReader br=new BufferedReader(new FileReader(File));
+
+        int i;
+        while((i=br.read())!=-1){
+        System.out.print((char)i);
+        }
+        br.close();
+        br.close();
         //Read From comsole
-        //    InputStreamReader r=new InputStreamReader(System.in);    
-//        BufferedReader br=new BufferedReader(r);            
-//        System.out.println("Enter your name");    
-//        String name=br.readLine();    
-//        System.out.println("Welcome "+name);  
+        //    InputStreamReader r=new InputStreamReader(System.in);
+//        BufferedReader br=new BufferedReader(r);
+//        System.out.println("Enter your name");
+//        String name=br.readLine();
+//        System.out.println("Welcome "+name);
 
 	}
 }

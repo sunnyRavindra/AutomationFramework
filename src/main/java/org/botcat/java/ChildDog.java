@@ -16,14 +16,14 @@ public class ChildDog extends ParentDog implements InterfaceAnimal {
 		System.out.println("This is from BullDog Methods");
 	}
 
-	@Override
-	public void normalInterfaceMethods() {
-		System.out.println("Interface Overriden methods");
-	}
-	
-	@Override
-	public void defaultInterfaceMethods() {
-		System.out.println("Ovverriden method from Interface");
-	}
-	
+//	@Override
+//	public void normalInterfaceMethods() {
+//		System.out.println("Interface Overriden methods");
+//	}
+//
+//	@Override
+//	public void defaultInterfaceMethods() {
+//		System.out.println("Ovverriden method from Interface");
+//	}
+
 }

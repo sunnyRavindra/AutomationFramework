@@ -55,7 +55,7 @@ public class Collection {
 		}
 
 		/**Queue Interface -> PriorityQueue
-		 * First come First Serve 
+		 * First come First Serve
 		 */
 		Queue<Integer> queue = new PriorityQueue();
 		queue.add(1);
@@ -78,8 +78,8 @@ public class Collection {
 			System.out.println(dequeIterator.next());
 		}
 
-		/**Set Interface ->{ hashset,Linked Hashset, ThreeSet} 
-		 * 
+		/**Set Interface ->{ hashset,Linked Hashset, ThreeSet}
+		 *
 		 */
 		Set<Integer> hashSet = new HashSet<>();
 		hashSet.add(1);
@@ -89,8 +89,8 @@ public class Collection {
 		while(hashSetIterator.hasNext()) {
 			System.out.println(hashSetIterator.next());
 		}
-		
-	   // SortedSet<data-type> set = new TreeSet();  
+
+	   // SortedSet<data-type> set = new TreeSet();
 
 
 

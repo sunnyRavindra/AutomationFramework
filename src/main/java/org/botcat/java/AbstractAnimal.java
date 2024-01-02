@@ -14,11 +14,11 @@ public abstract class AbstractAnimal {
 		this.height = height;
 		System.out.println("Coming from Parent Abstract class");
 	}
-	
+
 	public abstract String getType();
 
 	public abstract void setType(String type);
-	
+
 	public void parentAbstractClassMethod() {
 		System.out.println("this is a Parent Abstract Class Method");
 	}

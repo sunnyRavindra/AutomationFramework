@@ -77,7 +77,7 @@ public class DSA {
 	}
 
 	public void sumFirstAndLastDigit() {
-//		write a method named sumFirstAndLastDigit with one parameter of type int called number. 
+//		write a method named sumFirstAndLastDigit with one parameter of type int called number.
 //
 //		The method needs to find the first and the last digit of the parameter number passed to the method, using a loop and return the sum of the first and the last digit of that number.
 	}
@@ -93,7 +93,7 @@ public class DSA {
 
 //	Last Digit Checker
 //
-//	Write a method named hasSameLastDigit with three parameters of type int. 
+//	Write a method named hasSameLastDigit with three parameters of type int.
 //
 //	Each number should be within the range of 10 (inclusive) - 1000 (inclusive). If one of the numbers is not within the range, the method should return false.
 //
@@ -128,7 +128,7 @@ public class DSA {
 
 //	All Factors
 //
-//	Write a method named printFactors with one parameter of type int named number. 
+//	Write a method named printFactors with one parameter of type int named number.
 //
 //	If number is < 1, the method should print "Invalid Value".
 //
@@ -166,7 +166,7 @@ public class DSA {
 
 //	Greatest Common Divisor
 //
-//	Write a method named getGreatestCommonDivisor with two parameters of type int named first and second. 
+//	Write a method named getGreatestCommonDivisor with two parameters of type int named first and second.
 //
 //	If one of the parameters is < 10, the method should return -1 to indicate an invalid value.
 //
@@ -202,7 +202,7 @@ public class DSA {
 //
 //	NOTE: The method getGreatestCommonDivisor​ should be defined as public static like we have been doing so far in the course.
 //
-//	NOTE: Do not add a main method to the solution code.	
+//	NOTE: Do not add a main method to the solution code.
 
 //	Write a method called isOdd with an int parameter and call it number. The method needs to return a boolean.
 //
@@ -231,15 +231,15 @@ public class DSA {
 //	Perfect Number
 //
 //	What is the perfect number?
-//	A perfect number is a positive integer which is equal to the sum of its proper positive divisors. 
+//	A perfect number is a positive integer which is equal to the sum of its proper positive divisors.
 //	Proper positive divisors are positive integers that fully divide the perfect number without leaving a remainder and exclude the perfect number itself.
-//	For example, take the number 6: 
-//	Its proper divisors are 1, 2, and 3 (since 6 is the value of the perfect number, it is excluded), and the sum of its proper divisors is 1 + 2 + 3 = 6. 
+//	For example, take the number 6:
+//	Its proper divisors are 1, 2, and 3 (since 6 is the value of the perfect number, it is excluded), and the sum of its proper divisors is 1 + 2 + 3 = 6.
 //
 //	Therefore, 6 is a perfect number (as well as the first perfect number).
 //
 //
-//	Write a method named isPerfectNumber with one parameter of type int named number. 
+//	Write a method named isPerfectNumber with one parameter of type int named number.
 //
 //	If number is < 1, the method should return false.
 //
@@ -275,7 +275,7 @@ public class DSA {
 //
 //	To print the number as words, follow these steps:
 //
-//	    Extract the last digit of the given number using the remainder operator. 
+//	    Extract the last digit of the given number using the remainder operator.
 //
 //	    Convert the value of the digit found in Step 1 into a word. There are 10 possible values for that digit, those being 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Print the corresponding word for each digit, e.g. print "Zero" if the digit is 0, "One" if the digit is 1, and so on.
 //
@@ -289,7 +289,7 @@ public class DSA {
 //
 //	Use the method reverse within the method numberToWords in order to print the words in the correct order.
 //
-//	Another thing to keep in mind is any reversed number with leading zeroes (e.g. the reversed number for 100 is 001). The logic above for the method numberToWords will print "One", but that is incorrect. It should print "One Zero Zero". To solve this problem, write a third method called getDigitCount. 
+//	Another thing to keep in mind is any reversed number with leading zeroes (e.g. the reversed number for 100 is 001). The logic above for the method numberToWords will print "One", but that is incorrect. It should print "One Zero Zero". To solve this problem, write a third method called getDigitCount.
 //
 //	The method getDigitCount should have one int parameter called number and return the count of the digits in that number. If the number is negative, return -1 to indicate an invalid value.
 //	For example, if the number has a value of 100, the method getDigitCount should return 3 since the number 100 has 3 digits (1, 0, 0).
@@ -325,7 +325,7 @@ public class DSA {
 //	    numberToWords(-12); should print "Invalid Value" since the parameter is negative.
 //
 //
-//	HINT: Use a for loop to print zeroes after reversing the number. As seen in a previous example, 100 reversed becomes 1, but the method numberToWords should print "One Zero Zero". To get the number of zeroes, check the difference between the digit count from the original number and the reversed number. 
+//	HINT: Use a for loop to print zeroes after reversing the number. As seen in a previous example, 100 reversed becomes 1, but the method numberToWords should print "One Zero Zero". To get the number of zeroes, check the difference between the digit count from the original number and the reversed number.
 //
 //	NOTE: When printing words, each word can be in its own line. For example, numberToWords(123); can be:
 //
@@ -335,7 +335,7 @@ public class DSA {
 //
 //	They don't have to be separated by a space.
 //
-//	NOTE: The methods numberToWords, getDigitCount, reverse should be defined as public static like we have been doing so far in the course. 
+//	NOTE: The methods numberToWords, getDigitCount, reverse should be defined as public static like we have been doing so far in the course.
 //	NOTE: In total, you have to write 3 methods.
 //
 //	NOTE: Do not add a main method to the solution code.

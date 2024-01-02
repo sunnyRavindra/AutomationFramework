@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Selenium Framework" verbose="10" thread-count="2" parallel="tests">
+<suite name="Automation Framework" verbose="10" thread-count="2" parallel="tests">
 
 	<listeners>
 		<listener class-name="listeners.TestListener"></listener>
@@ -12,13 +12,13 @@
 
 	<test name="DemoQA">
 		<classes>
-			<class name="mercurytours.LoginTest"></class>
+			<class name="runner.SouceDemo"></class>
 		</classes>
 	</test>
 
 	<test name="SouceDemo">
 		<classes>
-			<class name="soucedemo.LoginTest"></class>
+			<class name="runner.SouceDemo"></class>
 		</classes>
 	</test>
 

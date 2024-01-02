@@ -9,7 +9,7 @@ public class Driver {
 	private String browser;
 
 	public Driver(WebDriver driver, String browser) {
-		this.driver = driver;
+		Driver.driver = driver;
 		this.browser = browser;
 		setupDriver(browser);
 	}

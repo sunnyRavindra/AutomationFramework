@@ -1,14 +1,5 @@
 package testNG;
 
-import org.apache.log4j.xml.DOMConfigurator;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-
-import utils.Log;
-
-
-
 public class Utils{
 //	public WebDriver driver;
 //
@@ -24,7 +15,7 @@ public class Utils{
 //	public void firefoxAfterSuite() {
 //		driver.quit();
 //	}
-	
+
 //	@BeforeTest(groups= {"qa","uat"})
 //	public void beforeTest() {
 //		System.out.println("@BeforeTest");
@@ -34,5 +25,5 @@ public class Utils{
 //	public void afterTest() {
 //		System.out.println("@AfterTest");
 //	}
-	
+
 }

@@ -1,13 +1,12 @@
 package testcases;
 
 import java.time.Duration;
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import pages.LoginPage;
 
 public class TestCase1 {
 

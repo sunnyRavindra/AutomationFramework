@@ -52,7 +52,7 @@ public ParentDog(String type, String name, String weight, String height) {
 	public void setType(String type) {
 		System.out.println("Coming from child class setType method");
 	}
-	
+
 	public void DogMethod() {
 		System.out.println("This is from Dog Methods");
 	}

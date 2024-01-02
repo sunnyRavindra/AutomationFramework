@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.botcat.org</groupId>
-	<artifactId>SeleniumFramework</artifactId>
+	<artifactId>AutomationFramework</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!--
@@ -13,6 +13,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.12.0</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
@@ -20,12 +21,14 @@
 			<version>7.8.0</version>
 			<scope>test</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.catools/extentreport -->
 		<dependency>
 			<groupId>org.catools</groupId>
 			<artifactId>extentreport</artifactId>
 			<version>1.0.1</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
 		<dependency>
 			<groupId>org.uncommons</groupId>
@@ -33,12 +36,14 @@
 			<version>1.1.4</version>
 			<scope>test</scope>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-email</artifactId>
 			<version>1.5</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
 		<dependency>
 			<groupId>com.mysql</groupId>
@@ -80,6 +85,7 @@
 			<artifactId>cucumber-testng</artifactId>
 			<version>7.13.0</version>
 		</dependency>
+
 		<!-- https://mvnrepository.com/artifact/com.itextpdf/itextpdf -->
 		<dependency>
 			<groupId>com.itextpdf</groupId>

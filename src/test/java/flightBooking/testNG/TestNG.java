@@ -11,7 +11,7 @@ import utils.Log;
 
 public class TestNG {
 	WebDriver driver;
-	
+
 	@BeforeSuite(groups= {"QA"})
 	public void BeforeSuite() {
 		DOMConfigurator.configure("log4j.xml");
