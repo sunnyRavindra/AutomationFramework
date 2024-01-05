@@ -2,82 +2,82 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-01-02T23:15:41 IST" name="Automation Framework" finished-at="2024-01-02T23:15:48 IST" duration-ms="7182">
+  <suite started-at="2024-01-05T19:26:56 IST" name="Automation Framework" finished-at="2024-01-05T19:27:14 IST" duration-ms="18574">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SouceDemo@2a2da905]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SouceDemo@578524c3]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:soucedemo.runner.FacadeLogin@68c9133c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:soucedemo.runner.LockedOutLogin@533bda92]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-01-02T23:15:41 IST" name="SouceDemo" finished-at="2024-01-02T23:15:48 IST" duration-ms="7182">
-      <class name="runner.SouceDemo">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.SouceDemo@578524c3]" started-at="2024-01-02T23:15:41 IST" name="setUpClass" finished-at="2024-01-02T23:15:41 IST" duration-ms="225" status="PASS">
+    <test started-at="2024-01-05T19:26:56 IST" name="SouceDemo" finished-at="2024-01-05T19:27:04 IST" duration-ms="8674">
+      <class name="soucedemo.runner.LockedOutLogin">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:soucedemo.runner.LockedOutLogin@533bda92]" started-at="2024-01-05T19:26:56 IST" name="setUpClass" finished-at="2024-01-05T19:26:56 IST" duration-ms="279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3fcdcf]]>
+                <![CDATA[org.testng.TestRunner@1224144a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SouceDemo@578524c3]" started-at="2024-01-02T23:15:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-02T23:15:48 IST" duration-ms="6892" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:soucedemo.runner.LockedOutLogin@533bda92]" started-at="2024-01-05T19:26:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-05T19:27:04 IST" duration-ms="8343" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to the souceDemo website"]]>
+                <![CDATA["Login to the souceDemo website with lockedout credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Feature"]]>
+                <![CDATA["Lockedout Login Feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.SouceDemo@578524c3]" started-at="2024-01-02T23:15:48 IST" name="tearDownClass" finished-at="2024-01-02T23:15:48 IST" duration-ms="42" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:soucedemo.runner.LockedOutLogin@533bda92]" started-at="2024-01-05T19:27:04 IST" name="tearDownClass" finished-at="2024-01-05T19:27:04 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.SouceDemo -->
+      </class> <!-- soucedemo.runner.LockedOutLogin -->
     </test> <!-- SouceDemo -->
-    <test started-at="2024-01-02T23:15:41 IST" name="DemoQA" finished-at="2024-01-02T23:15:48 IST" duration-ms="7182">
-      <class name="runner.SouceDemo">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.SouceDemo@2a2da905]" started-at="2024-01-02T23:15:41 IST" name="setUpClass" finished-at="2024-01-02T23:15:41 IST" duration-ms="225" status="PASS">
+    <test started-at="2024-01-05T19:26:56 IST" name="DemoQA" finished-at="2024-01-05T19:27:14 IST" duration-ms="18574">
+      <class name="soucedemo.runner.FacadeLogin">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:soucedemo.runner.FacadeLogin@68c9133c]" started-at="2024-01-05T19:26:56 IST" name="setUpClass" finished-at="2024-01-05T19:26:56 IST" duration-ms="279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@7ee55e70]]>
+                <![CDATA[org.testng.TestRunner@f58853c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.SouceDemo@2a2da905]" started-at="2024-01-02T23:15:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-02T23:15:48 IST" duration-ms="6893" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:soucedemo.runner.FacadeLogin@68c9133c]" started-at="2024-01-05T19:26:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-01-05T19:27:14 IST" duration-ms="18261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to the souceDemo website"]]>
+                <![CDATA["Login to the souceDemo website with facade credentials"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login Feature"]]>
+                <![CDATA["Facade Login Feature"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.SouceDemo@2a2da905]" started-at="2024-01-02T23:15:48 IST" name="tearDownClass" finished-at="2024-01-02T23:15:48 IST" duration-ms="41" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:soucedemo.runner.FacadeLogin@68c9133c]" started-at="2024-01-05T19:27:14 IST" name="tearDownClass" finished-at="2024-01-05T19:27:14 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.SouceDemo -->
+      </class> <!-- soucedemo.runner.FacadeLogin -->
     </test> <!-- DemoQA -->
   </suite> <!-- Automation Framework -->
 </testng-results>

@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Automation Framework" verbose="10" thread-count="2" parallel="tests">
+<suite name="Automation Framework" verbose="10" thread-count="9"
+	parallel="tests">
 
 	<listeners>
-		<listener class-name="listeners.TestListener"></listener>
-		<listener class-name="listeners.ReporterListener"></listener>
-		<listener class-name="listeners.ExecutionListener"></listener>
-		<listener class-name="listeners.InvokedMethodListener"></listener>
-		<listener class-name="listeners.SuiteListener"></listener>
+		<listener class-name="afw.listeners.TestListener"></listener>
+		<listener class-name="afw.listeners.ReporterListener"></listener>
+		<listener class-name="afw.listeners.ExecutionListener"></listener>
+		<listener class-name="afw.listeners.InvokedMethodListener"></listener>
+		<listener class-name="afw.listeners.SuiteListener"></listener>
 	</listeners>
 
 	<test name="DemoQA">
 		<classes>
-			<class name="runner.SouceDemo"></class>
+			<class name="soucedemo.runner.FacadeLogin"></class>
 		</classes>
 	</test>
 
 	<test name="SouceDemo">
 		<classes>
-			<class name="runner.SouceDemo"></class>
+			<class name="soucedemo.runner.LockedOutLogin"></class>
 		</classes>
 	</test>
 

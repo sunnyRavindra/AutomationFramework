@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "project": {
+            "key": "TES"
+        },
+        "summary": "One More issue",
+        "issuetype": {
+            "name": "Bug"
+        },
+        "description": "description"
+    }
+}

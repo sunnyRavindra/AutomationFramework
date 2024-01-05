@@ -9,10 +9,10 @@ import org.testng.Assert;
 public class LoginPage {
 
 	WebDriver driver;
-//	String url = "https://www.saucedemo.com/";
-//	String userID = "standard_user";
-//	String password = "secret_sauce";
-//	String title = "Swag Labs";
+	String url = "https://www.saucedemo.com/";
+	String userID = "standard_user";
+	String password = "secret_sauce";
+	String title = "Swag Labs";
 
 	@FindBy(css = "input#user-name")
 	WebElement _userName;
@@ -24,8 +24,8 @@ public class LoginPage {
 	WebElement _loginButton;
 
 	public LoginPage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 	
 	public void goTo(String url) {
@@ -50,15 +50,14 @@ public class LoginPage {
 		Assert.assertEquals(driver.getTitle(), title);
 	}
 
-//	public HomePage login() throws InterruptedException {
-//		enterUserName();
-//		enterPassword();
-//		clickOn();
-//		validateTitle(title);
-//		Thread.sleep(10000);
-//		return new HomePage(driver);
-//	}
-
-
+	public HomePage login() throws InterruptedException {
+		goTo(url);
+		enterUserName(userID);
+		enterPassword(password);
+		clickOnSubmit();
+		validateTitle(title);
+		Thread.sleep(10000);
+		return new HomePage(driver);
+	}
 
 }

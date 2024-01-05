@@ -33,23 +33,20 @@ public class HomePage {
 	private WebElement _tshirtRed;
 
 	public HomePage(WebDriver driver) {
-		PageFactory.initElements(driver, this);
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
-	
+
 	public void validateTitle(String title) {
 		Assert.assertEquals(driver.getTitle(), title);
 	}
 
 	public void validatePage() {
-
 		List<WebElement> elements = new ArrayList<>(
 				Arrays.asList(_backpack, _bikeLight, _onesie, _tshirt, _jacket, _tshirtRed));
-
 		for (WebElement e : elements) {
 			Assert.assertTrue(e.isDisplayed());
 		}
-
 	}
 
 }
