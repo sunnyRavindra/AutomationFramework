@@ -2,16 +2,16 @@ package afw.manager;
 
 import afw.utils.ConfigFileReader;
 
-public class FileReaderManager {
+public class PropertyManager {
 
-	private static FileReaderManager fileReaderManager = new FileReaderManager();
+	private static PropertyManager propertyManager = new PropertyManager();
 	private static ConfigFileReader configFileReader;
 
-	private FileReaderManager() {
+	private PropertyManager() {
 	}
 
-	 public static FileReaderManager getInstance( ) {
-	      return fileReaderManager;
+	 public static PropertyManager getInstance( ) {
+	      return propertyManager;
 	 }
 
 	 public ConfigFileReader getConfigReader() {

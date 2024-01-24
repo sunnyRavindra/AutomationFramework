@@ -3,10 +3,11 @@ package soucedemo;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-import afw.manager.FileReaderManager;
+import afw.context.TestContext;
 import afw.manager.PageObjectManager;
+import afw.manager.PropertyManager;
+import afw.manager.WebDriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -15,19 +16,22 @@ import pages.soucedemo.HomePage;
 import pages.soucedemo.LoginPage;
 
 public class Login {
+	TestContext testContext;
 	WebDriver driver;
-	PageObjectManager pom;
 	LoginPage loginPage;
 	HomePage homePage;
+	
+	public Login(TestContext context) {
+		System.out.println("########################## Open Browser ################################");
+		testContext = context;
+		loginPage = testContext.getPageObjectManager().getLoginPage();
+		homePage = testContext.getPageObjectManager().getHomePage();
+		driver = testContext.getWebDriverManager().getDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(PropertyManager.getInstance().getConfigReader().getImplicitlyWait()));
+	}
 
 	@Before
 	public void Before() {
-		System.out.println("########################## Open Browser ################################");
-		driver = new FirefoxDriver();
-		pom = new PageObjectManager(driver);
-		loginPage = pom.getLoginPage();
-		homePage = pom.getHomePage();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	}
 
 	@Given("Navigate to {string} with url {string}")
@@ -52,7 +56,6 @@ public class Login {
 
 	@Then("validate title with {string}")
 	public void validate_title_with(String title) {
-		homePage = new HomePage(driver);
 		homePage.validateTitle(title);
 	}
 
@@ -64,7 +67,7 @@ public class Login {
 	@After
 	public void After() {
 		System.out.println("########################## Closing Browser ################################");
-		driver.quit();
+		testContext.getWebDriverManager().closeDriver();
 	}
 
 }

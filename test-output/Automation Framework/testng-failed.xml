@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="9" parallel="tests" name="Failed suite [Automation Framework]" guice-stage="DEVELOPMENT" verbose="10">
+  <test thread-count="9" parallel="tests" name="Facade Login(failed)" verbose="10">
+    <classes>
+      <class name="soucedemo.runner.Regression">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0 1 2 3"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- soucedemo.runner.Regression -->
+    </classes>
+  </test> <!-- Facade Login(failed) -->
+</suite> <!-- Failed suite [Automation Framework] -->

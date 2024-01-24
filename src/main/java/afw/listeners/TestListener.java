@@ -5,7 +5,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
-import afw.utils.BaseClass;
+//import afw.utils.BaseClass;
 
 public class TestListener implements ITestListener {
 
@@ -19,16 +19,15 @@ public class TestListener implements ITestListener {
 		System.out.println("Test Ends : ##########Ended######### :-->" + context.getName());
 	}
 
-    @Override
-    public void onTestFailure(ITestResult results) {
-    	System.out.println("Test Results Status : " + results.getStatus());
-    	try {
-			BaseClass.takeSnapShot();
-		} catch (Exception e) {
-			Reporter.log("Issue in Taking screenshot");
-		}
-
-    }
+//    @Override
+//    public void onTestFailure(ITestResult results) {
+//    	System.out.println("Test Results Status : " + results.getStatus());
+//    	try {
+////			BaseClass.takeSnapShot();
+//		} catch (Exception e) {
+//			Reporter.log("Issue in Taking screenshot");
+//		}
+//    }
 
     @Override
     public void onTestSuccess(ITestResult result) {
